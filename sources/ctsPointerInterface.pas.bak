@@ -1,0 +1,16 @@
+{$I CetusOptions.inc}
+
+unit ctsPointerInterface;
+
+interface
+
+uses
+  ctsTypesDef,
+  ctsBaseInterfaces;
+
+type
+  TctsDataType = Pointer;
+  
+{$I template\ctsStructIntf.inc}
+
+end.

@@ -1,0 +1,53 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 597
+  ClientWidth = 764
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 12
+  object tvResult: TTreeView
+    Left = 0
+    Top = 0
+    Width = 764
+    Height = 552
+    Align = alClient
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    Indent = 19
+    ParentFont = False
+    TabOrder = 0
+    ExplicitLeft = 24
+    ExplicitTop = 24
+    ExplicitWidth = 305
+    ExplicitHeight = 313
+  end
+  object pnl1: TPanel
+    Left = 0
+    Top = 552
+    Width = 764
+    Height = 45
+    Align = alBottom
+    Caption = 'pnl1'
+    TabOrder = 1
+    object btn1: TButton
+      Left = 672
+      Top = 12
+      Width = 75
+      Height = 25
+      Caption = 'btn1'
+      TabOrder = 0
+      OnClick = btn1Click
+    end
+  end
+end

@@ -1,0 +1,89 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{21df8fa6-73fc-42fe-b638-ce57cd58109f}</ProjectGuid>
+    <MainSource>Cetus_D11.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\bin\Cetus_D11.dll</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>..\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>..\lib\d11</DCC_DcuOutput>
+    <DCC_ObjOutput>..\lib\d11</DCC_ObjOutput>
+    <DCC_HppOutput>..\lib\d11</DCC_HppOutput>
+    <DCC_BplOutput>..\bin</DCC_BplOutput>
+    <DCC_DcpOutput>..\lib\d11</DCC_DcpOutput>
+    <DCC_UnitSearchPath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_ResourcePath>
+    <DCC_ObjPath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_ObjPath>
+    <DCC_IncludePath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>..\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>..\lib\d11</DCC_DcuOutput>
+    <DCC_ObjOutput>..\lib\d11</DCC_ObjOutput>
+    <DCC_HppOutput>..\lib\d11</DCC_HppOutput>
+    <DCC_BplOutput>..\bin</DCC_BplOutput>
+    <DCC_DcpOutput>..\lib\d11</DCC_DcpOutput>
+    <DCC_UnitSearchPath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_ResourcePath>
+    <DCC_ObjPath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_ObjPath>
+    <DCC_IncludePath>..\Library\FastMM4;..\Library\FastCode;..\Library\OmniXML;..\Sources;$(TEMP)</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">True</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">4</VersionInfo>
+      <VersionInfo Name="Build">160</VersionInfo>
+      <VersionInfo Name="Debug">True</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">2052</VersionInfo>
+      <VersionInfo Name="CodePage">936</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">Cetus</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">Cetus's Data Structure</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.4.160</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">Cetus</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.4.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">Cetus_D11.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="Cetus_D11.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

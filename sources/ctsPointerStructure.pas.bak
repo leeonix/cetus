@@ -1,0 +1,16 @@
+{$I CetusOptions.inc}
+
+unit ctsPointerStructure;
+
+interface
+
+uses
+{$I ctsUseDeclare.inc}
+  ctsPointerInterface;
+
+const
+  cUnitName = 'ctsPointerStructure';
+
+{$I template\ctsStructImp.inc}
+
+end.

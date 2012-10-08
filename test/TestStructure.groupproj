@@ -1,0 +1,64 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{721670a4-0e2a-42a4-89b1-46d57c6d5430}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="test_intf\TestInterface.bdsproj" />
+    <Projects Include="test_object\TestObject.bdsproj" />
+    <Projects Include="test_ptr\TestPointer.bdsproj" />
+    <Projects Include="test_string\TestString.bdsproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="TestInterface">
+    <MSBuild Projects="test_intf\TestInterface.bdsproj" Targets="" />
+  </Target>
+  <Target Name="TestInterface:Clean">
+    <MSBuild Projects="test_intf\TestInterface.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="TestInterface:Make">
+    <MSBuild Projects="test_intf\TestInterface.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="TestPointer">
+    <MSBuild Projects="test_ptr\TestPointer.bdsproj" Targets="" />
+  </Target>
+  <Target Name="TestPointer:Clean">
+    <MSBuild Projects="test_ptr\TestPointer.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="TestPointer:Make">
+    <MSBuild Projects="test_ptr\TestPointer.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="TestString">
+    <MSBuild Projects="test_string\TestString.bdsproj" Targets="" />
+  </Target>
+  <Target Name="TestString:Clean">
+    <MSBuild Projects="test_string\TestString.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="TestString:Make">
+    <MSBuild Projects="test_string\TestString.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="TestObject">
+    <MSBuild Projects="test_object\TestObject.bdsproj" Targets="" />
+  </Target>
+  <Target Name="TestObject:Clean">
+    <MSBuild Projects="test_object\TestObject.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="TestObject:Make">
+    <MSBuild Projects="test_object\TestObject.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="TestInterface;TestPointer;TestString;TestObject" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="TestInterface:Clean;TestPointer:Clean;TestString:Clean;TestObject:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="TestInterface:Make;TestPointer:Make;TestString:Make;TestObject:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
